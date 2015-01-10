@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Peer Composer</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3">
+                    <h3>Peer Composer</h3>
+                    <div class="sidebar">
+                        <div class="my-id">
+                            <!-- Populated by JS-->
+                        </div>
+                        <div class="new-connection">
+                            <div class="input-group">
+                                <input type="text" name="con-id" class="form-control" placeholder="Connection ID...">
+                                <span class="input-group-btn">
+                                    <button id="connect" class="btn btn-default" type="button">Connect</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Connections:</h5>
+                            <ul class="connections">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Area -->
+                <div class="col-md-6">
+                    <h2>Workspace</h2>
+                    <div class="workspace">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <h3>Chat</h3>
+                    <div class="new-msg">
+                            <div class="input-group">
+                                <input type="text" name="msg" class="form-control" placeholder="Type msg...">
+                                <span class="input-group-btn">
+                                    <button id="send-msg" class="btn btn-default" type="button">Send</button>
+                                </span>
+                            </div>
+                        </div>
+
+                    <div class="chat">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript Includes -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        <!-- Peer JS -->
+        <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+        <script src="js/connection.js"></script>
+        <script src="js/chat.js"></script>
+    </body>
+</html>
